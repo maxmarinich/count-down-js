@@ -13,14 +13,15 @@ npm install count-down-js
 ```
 
 
-### _Options_
+### _Default Options_
 ```javascript
     {
       timeStamp: 0, // value in milliseconds
       countStep: 1000, // value in milliseconds
       leadingZero: false, // adds leading zero before the value if it's a single digit
-      onCount: function() {},
-      onCountEnd: function() {},
+      onInitialize: function(eventObject) {},
+      onCount: function(eventObject) {},
+      onCountEnd: function(eventObject) {},
     }
 ```
 
@@ -33,23 +34,31 @@ npm install count-down-js
     import CountDown from 'count-down-js'
     
     const timeStamp = Date.now() + 24 * 60 * 60 * 1000
+    const onInitialize = (timeLeft) => console.log(timeLeft)
     const onCount = (timeLeft) => console.log(timeLeft)
     const onCountEnd = (timeLeft) => console.log(timeLeft)
     
-    const CountDownTimer = new CountDown({ timeStamp, onCount, onCountEnd })
+    const CountDownTimer = new CountDown({ timeStamp, onInitialize, onCount, onCountEnd })
     
-    // output on every tick
-    const timeLeft = { days: 0, hours: 23, minutes: 59, seconds: 59 }
+    // output on onInitialize
+    const onInitializeTimeLeft = { days: 1, hours: 0, minutes: 0, seconds: 0 }
+    
+    // output on every tick, will be reduced by a `countStep`
+    const onCountTimeLeft = { days: 0, hours: 23, minutes: 59, seconds: 59 }
     
     // output on count end (not called when destroy)
-    const timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 }
+    const onCountEndTimeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 }
     
-    
-    setTimeout(() => CountDownTimer.destroy(), 5000)
+    // destroy timer
+    CountDownTimer.destroy()
 
 ```
 
 #### Tests
 ```apacheconfig
 npm test
+```
+#### Coverage
+```apacheconfig
+npm run coverage
 ```
