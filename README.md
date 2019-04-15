@@ -1,4 +1,4 @@
-### CountDownJS
+### Realtime Countdown
 Lightweight realtime countdown timer JavaScript Library
 
 ### Features
@@ -31,14 +31,14 @@ npm install count-down-js
 
 ### _How to use_
 ```javascript
-    import CountDown from 'count-down-js'
+    import RealtimeCountdown from 'realtime-countdown'
     
     const timeStamp = Date.now() + 24 * 60 * 60 * 1000
     const onInitialize = (timeLeft) => console.log(timeLeft)
     const onCount = (timeLeft) => console.log(timeLeft)
     const onCountEnd = (timeLeft) => console.log(timeLeft)
     
-    const CountDownTimer = new CountDown({ timeStamp, onInitialize, onCount, onCountEnd })
+    const Timer = new RealtimeCountdown({ timeStamp, onInitialize, onCount, onCountEnd })
     
     // output on onInitialize
     const onInitializeTimeLeft = { days: 1, hours: 0, minutes: 0, seconds: 0 }
@@ -50,7 +50,7 @@ npm install count-down-js
     const onCountEndTimeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 }
     
     // destroy timer
-    CountDownTimer.destroy()
+    Timer.destroy()
 
 ```
 

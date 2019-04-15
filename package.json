@@ -1,12 +1,12 @@
 {
-  "name": "count-down-js",
-  "version": "0.0.1",
+  "name": "realtime-countdown",
+  "version": "0.1.0",
   "description": "Realtime countdown timer JavaScript Library",
   "main": "lib/",
   "types": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxmarinich/count-down-js.git"
+    "url": "https://github.com/maxmarinich/realtime-countdown.git"
   },
   "scripts": {
     "start": "gulp",
@@ -14,9 +14,9 @@
     "coverage": "jest --coverage"
   },
   "keywords": [
-    "count-down-timer",
-    "countdown-timer",
-    "countdown-js"
+    "realtime countdown",
+    "countdown timer",
+    "countdown"
   ],
   "author": "Max Marinich",
   "maintainers": [
@@ -44,9 +44,9 @@
   "coverage": "jest --coverage",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maxmarinich/count-down-js/issues"
+    "url": "https://github.com/maxmarinich/realtime-countdown/issues"
   },
-  "homepage": "https://github.com/maxmarinich/count-down-js#readme",
+  "homepage": "https://github.com/maxmarinich/realtime-countdown#readme",
   "dependencies": {},
   "devDependencies": {
     "babel-plugin-transform-object-assign": "^6.22.0",
