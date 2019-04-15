@@ -9,7 +9,7 @@ Lightweight realtime countdown timer JavaScript Library
 ### _Install_
 
 ```apacheconfig
-npm install count-down-js
+npm install realtime-countdown
 ```
 
 
