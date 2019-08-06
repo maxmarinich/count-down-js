@@ -1,6 +1,6 @@
 {
   "name": "realtime-countdown",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Realtime countdown timer JavaScript Library",
   "main": "lib/",
   "types": "",
@@ -15,8 +15,10 @@
   },
   "keywords": [
     "realtime countdown",
+    "realtime timer",
     "countdown timer",
-    "countdown"
+    "countdown",
+    "timer"
   ],
   "author": "Max Marinich",
   "maintainers": [
@@ -60,8 +62,5 @@
     "gulp-strip-comments": "^2.5.1",
     "jest": "^23.6.0",
     "prettier": "^1.15.3"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
   }
 }
