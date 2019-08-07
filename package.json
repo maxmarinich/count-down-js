@@ -1,6 +1,6 @@
 {
   "name": "realtime-countdown",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Realtime countdown timer JavaScript Library",
   "main": "lib/",
   "types": "",

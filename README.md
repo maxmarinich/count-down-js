@@ -22,6 +22,7 @@ npm install realtime-countdown
       onInitialize: function(eventObject) {},
       onCount: function(eventObject) {},
       onCountEnd: function(eventObject) {},
+      onDestroy: function(eventObject) {},
     }
 ```
 
